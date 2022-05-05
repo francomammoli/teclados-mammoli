@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import CartWidget from './CartWidget';
 
 function NavBar() {
   
@@ -33,10 +34,7 @@ function NavBar() {
           <Link className="nav-link disabled" to='/'>Ofertas</Link>
         </li>
       </ul>
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Search" aria-label="Buscar producto.."></input>
-        <button className="btn btn-outline-success" type="submit">Buscar</button>
-      </form>
+      <div><CartWidget></CartWidget></div>
     </div>
   </div>
 </nav>
